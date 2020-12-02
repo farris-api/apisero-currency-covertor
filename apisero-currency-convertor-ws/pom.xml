@@ -31,6 +31,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.3.0</muleVersion>
+						<applicationName>apisero-currency-convertor-ws</applicationName>
+						<environment>Sandbox</environment>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<objectStoreV2>true</objectStoreV2>
+						<properties>
+							<mule.key>mulesoft</mule.key>
+							<env>dev</env>
+						</properties>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		<plugin>
@@ -129,6 +142,10 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+        	<id>mule-public</id>
+        	<url>https://respository.mulesoft.org/nexus/content/repositories/releases</url>
         </pluginRepository>
     </pluginRepositories>
 
