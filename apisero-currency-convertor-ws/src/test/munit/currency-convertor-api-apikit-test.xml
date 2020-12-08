@@ -9,7 +9,7 @@
             <munit:enable-flow-source value="currency-convertor-api-main" />
             <munit:enable-flow-source value="get:\convert:currency-convertor-api-config" />
         </munit:enable-flow-sources>
-        <munit:execution>
+		<munit:execution>
             <http:request config-ref="HTTP_Request_Configuration" method="GET" path="/convert">
                 <http:headers><![CDATA[#[{"Accept":"application/json"}]]]></http:headers>
                 <http:query-params><![CDATA[#[{"from":"AED","to":"INR","value":"100"}]]]></http:query-params>
