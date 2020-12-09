@@ -34,8 +34,8 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.3.0</muleVersion>
-						<username>farris_peeradina1</username>
-						<password>Abbajee-9130</password>
+						<username>${username}</username>
+						<password>${password}</password>
 						<applicationName>apisero-currency-convertor-ws</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
